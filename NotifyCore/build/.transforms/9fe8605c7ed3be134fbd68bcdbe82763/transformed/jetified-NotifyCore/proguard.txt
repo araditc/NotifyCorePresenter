@@ -1,0 +1,90 @@
+# Add project specific ProGuard rules here.
+# You can control the set of applied configuration files using the
+# proguardFiles setting in build.gradle.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+# Uncomment this to preserve the line number information for
+# debugging stack traces.
+#-keepattributes SourceFile,LineNumberTable
+
+# If you keep the line number information, uncomment this to
+# hide the original source file name.
+#-renamesourcefileattribute SourceFile
+
+-keep public class com.arad_itc.notify.core.amq.presentation.widgets.AradMessageListUi
+-keepclassmembers class com.arad_itc.notify.core.amq.presentation.widgets.AradMessageListUi  {
+    public <methods>;
+    public <fields>;
+}
+
+-keep public class com.arad_itc.notify.core.amq.presentation.widgets.AradMessageListUi
+-keepclassmembers class com.arad_itc.notify.core.amq.presentation.widgets.AradMessageListUi  {
+    public <methods>;
+    public <fields>;
+}
+
+-keep public class com.arad_itc.notify.core.amq.domain.entities.ConnectionStatus
+-keepclassmembers class com.arad_itc.notify.core.amq.domain.entities.ConnectionStatus  {
+    public <methods>;
+    public <fields>;
+}
+-keep public class com.arad_itc.notify.core.amq.presentation.AradBroker
+-keepclassmembers class com.arad_itc.notify.core.amq.presentation.AradBroker  {
+    public <methods>;
+    public <fields>;
+}
+-keep public class com.arad_itc.notify.core.amq.domain.entities.AMQMessage
+-keepclassmembers class com.arad_itc.notify.core.amq.domain.entities.AMQMessage  {
+    public <methods>;
+    public <fields>;
+}
+-keep public class com.arad_itc.notify.core.amq.domain.repositories.OnAradBrokerListener
+-keepclassmembers class com.arad_itc.notify.core.amq.domain.repositories.OnAradBrokerListener  {
+    public <methods>;
+    public <fields>;
+}
+-keep public class com.arad_itc.notify.core.amq.presentation.Notify
+-keepclassmembers class com.arad_itc.notify.core.amq.presentation.Notify  {
+    public <methods>;
+    public <fields>;
+}
+-keep public class com.arad_itc.notify.core.notification.domain.services.AradFcmService
+-keepclassmembers class com.arad_itc.notify.core.notification.domain.services.AradFcmService  {
+    public <methods>;
+    public <fields>;
+}
+-keep public class com.arad_itc.notify.core.notification.presentation.NotificationBuilder
+-keepclassmembers class com.arad_itc.notify.core.notification.presentation.NotificationBuilder  {
+    public <methods>;
+    public <fields>;
+}
+-keep public class com.arad_itc.notify.core.notification.AradPushNotificationManager
+-keepclassmembers class com.arad_itc.notify.core.notification.AradPushNotificationManager  {
+    public <methods>;
+    public <fields>;
+}
+
+# Firebase
+-keep class com.google.android.gms.** { *; }
+-keep class com.google.firebase.** { *; }
+
+-keep public class androidx.security.** { *; }
+-keep public class io.reactivex.rxjava3.** { *; }
+-keep public class io.reactivex.rxjava2.** { *; }
+-keep public class com.squareup.picasso.** { *; }
+-keep public class com.google.android.exoplayer.** { *; }
+-keep public class com.github.barteksc.** { *; }
+-keep public class com.squareup.okhttp3.** { *; }
+-keep public class org.apache.poi.** { *; }
+
+-dontwarn org.apache.poi.**
+

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="qos_options">
+    <item name="qos_0">0</item>
+    <item name="qos_1">1</item>
+    <item name="qos_2">2</item>
+  </string-array>
+    <attr format="reference" name="cardStyle"/>
+    <attr format="reference" name="colorExpiring"/>
+    <attr format="reference" name="colorGithub"/>
+    <attr format="reference" name="dialogTheme"/>
+    <attr format="reference" name="navigationBarColor"/>
+    <attr format="reference" name="thumbnailBackground"/>
+    <attr format="reference" name="windowBackground"/>
+    <color name="black">#FF4e4e4e</color>
+    <color name="colorAccent">#2EA9E1</color>
+    <color name="colorAccentDark">#2196F3</color>
+    <color name="colorAccentLight">#662EA9E1</color>
+    <color name="colorPrimary">#EE832B</color>
+    <color name="colorPrimaryDark">#EA5B1E</color>
+    <color name="dark_thumbnail_background">#ffe0e0e0</color>
+    <color name="default_background_color">#FFFFFF</color>
+    <color name="default_background_color_dark">#575353</color>
+    <color name="default_outlin_background_color">@color/grey</color>
+    <color name="default_outlin_background_color_dark">@color/ligth_grey</color>
+    <color name="default_subtitle_color">@color/grey</color>
+    <color name="default_subtitle_color_dark">@color/ligth_grey</color>
+    <color name="expiring_red_dark">#d50000</color>
+    <color name="expiring_red_light">#f05545</color>
+    <color name="github_dark">#333333</color>
+    <color name="github_light">#f5f5f5</color>
+    <color name="grey">#FF979696</color>
+    <color name="ligth_grey">#FFF0F0F0</color>
+    <color name="pay_back_color">#F44336</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="receive_back_color">#FF018786</color>
+    <color name="red">#F44336</color>
+    <color name="red_dark">#CD3A2F</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="app_radius">8dp</dimen>
+    <dimen name="appbar_height">48dp</dimen>
+    <dimen name="rclv_items_radius">24dp</dimen>
+    <dimen name="space_l">20dp</dimen>
+    <dimen name="space_m">8dp</dimen>
+    <dimen name="space_s">4dp</dimen>
+    <dimen name="space_xl">40dp</dimen>
+    <dimen name="space_xxl">55dp</dimen>
+    <dimen name="text_l">18sp</dimen>
+    <dimen name="text_m">14sp</dimen>
+    <dimen name="text_s">10sp</dimen>
+    <dimen name="text_xl">22sp</dimen>
+    <dimen name="text_xxl">26sp</dimen>
+    <dimen name="text_xxxl">30sp</dimen>
+    <dimen name="view_l">12dp</dimen>
+    <dimen name="view_m">8dp</dimen>
+    <dimen name="view_s">4dp</dimen>
+    <dimen name="view_xl">16dp</dimen>
+    <dimen name="view_xxl">20dp</dimen>
+    <dimen name="view_xxxl">24dp</dimen>
+    <string name="Audio">صدا</string>
+    <string name="CancelDownload">لغو دانلود</string>
+    <string name="Command">دستور</string>
+    <string name="Contact">مخاطبین</string>
+    <string name="Custom">متفرقه</string>
+    <string name="DLR">تحویل داده شده</string>
+    <string name="Document">فایل</string>
+    <string name="DownloadFile">دانلود فایل</string>
+    <string name="Image">تصویر</string>
+    <string name="Location">موقعیت</string>
+    <string name="SEEN">دیده شده</string>
+    <string name="Text">متن</string>
+    <string name="Transaction">تراکنش</string>
+    <string name="Video">ویدیو</string>
+    <string name="action_add_connection">Add Connection</string>
+    <string name="add_connection_advanced_label">Advanced</string>
+    <string name="add_connection_clean_session_label">Clean Session</string>
+    <string name="add_connection_client_id_default">AndroidClient</string>
+    <string name="add_connection_client_id_label">Client ID</string>
+    <string name="add_connection_general_label">General</string>
+    <string name="add_connection_keepalive_label">Keepalive</string>
+    <string name="add_connection_lwt_label">Last Will &amp; Testament</string>
+    <string name="add_connection_lwt_message_label">Message</string>
+    <string name="add_connection_lwt_qos_label">QoS</string>
+    <string name="add_connection_lwt_retain_label">Retain</string>
+    <string name="add_connection_lwt_topic_label">Topic</string>
+    <string name="add_connection_password_label">Password</string>
+    <string name="add_connection_port_label">Port</string>
+    <string name="add_connection_server_default">iot.eclipse.org</string>
+    <string name="add_connection_server_label">Server</string>
+    <string name="add_connection_timeout_label">Timeout</string>
+    <string name="add_connection_tls_client_key_label">Client TLS Key</string>
+    <string name="add_connection_tls_server_key_label">Server TLS Key</string>
+    <string name="add_connection_username_label">Username</string>
+    <string name="audios_title">صدا</string>
+    <string name="call">تماس</string>
+    <string name="connection_clear">Clear</string>
+    <string name="connection_connected_to">Connected to</string>
+    <string name="connection_connecting_to">Connecting to</string>
+    <string name="connection_disconnected_from">Disconnected from</string>
+    <string name="connection_disconnecting_from">Disconnecting from</string>
+    <string name="connection_error_connecting_to">An error occurred connecting to</string>
+    <string name="connection_lost">%1$s has lost connection to %2$s</string>
+    <string name="connection_unknown_status">Unknown connection status to</string>
+    <string name="default_notification_channel_id">Notify Core</string>
+    <string name="dialog_delete_message">آیا از حذف این پیام اطمینان دارید؟</string>
+    <string name="dialog_delete_neg_btn">لغو</string>
+    <string name="dialog_delete_pos_btn">بله,حذف</string>
+    <string name="dialog_delete_title">حذف پیام</string>
+    <string name="disabled">Disabled</string>
+    <string name="download">دانلود</string>
+    <string name="enabled">Enabled</string>
+    <string name="file_title">فایل</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="help_and_feedback">Help &amp; Feedback</string>
+    <string name="help_arad">arad</string>
+    <string name="help_arad_website">Go to the arad Website</string>
+    <string name="help_email_button">Get Help or send Feedback</string>
+    <string name="help_enable_logging">Enable arad Logging</string>
+    <string name="help_title"> arad Android Example Utility</string>
+    <string name="home_no_connections">No Connections</string>
+    <string name="home_no_cons_message">It looks like there are no connections defined yet.</string>
+    <string name="image_title">تصاویر</string>
+    <string name="location_title">موقعیت مکانی</string>
+    <string name="manage_delete">Delete Connection</string>
+    <string name="manage_edit">Edit Connection</string>
+    <string name="manage_title">Manage Connection</string>
+    <string name="messageRecieved">Received message %1$s &lt;br/> &lt;small>Topic: %2$s &lt;/small> </string>
+    <string name="message_time">Time:</string>
+    <string name="message_time_fmt">Time: %1$s</string>
+    <string name="message_topic">Topic: </string>
+    <string name="notification">%1$s has received %2$s on topic %3$s</string>
+    <string name="notifyTitle">MQTT Message Received</string>
+    <string name="notifyTitle_connectionLost">MQTT Client Has Lost Connection</string>
+    <string name="notify_label">Show Notifications</string>
+    <string name="notify_text">Notifications: %1$s</string>
+    <string name="placeholder_example">Example application</string>
+    <string name="placeholder_main_label">Main Label</string>
+    <string name="placeholder_sub_label">Sub Label</string>
+    <string name="publish">Publish</string>
+    <string name="qos_label">QoS</string>
+    <string name="qos_text">QoS: %1$d</string>
+    <string name="save">ذخیره</string>
+    <string name="searchBtnSheetTitle">جستجو</string>
+    <string name="selectDate">انتخاب تاریخ</string>
+    <string name="subscribe_cancel">Cancel</string>
+    <string name="subscribe_ok">OK</string>
+    <string name="subscription_new">New Subscription</string>
+    <string name="text_title">پیام</string>
+    <string name="timestamp">&lt;br/> &lt;small> %1$s &lt;/small></string>
+    <string name="toast_disconnected">Disconnected</string>
+    <string name="toast_pub_failed">Failed to publish message: %1$s to topic: %2$s</string>
+    <string name="toast_pub_success">Published message: %1$s to topic: %2$s</string>
+    <string name="toast_sub_failed">Failed to subscribe to %1$s</string>
+    <string name="toast_sub_success">Subscribed to %1$s</string>
+    <string name="topic_fmt">Topic: %1$s</string>
+    <string name="topic_label">Topic</string>
+    <string name="transaction_title">تراکنش</string>
+    <string name="video_title">ویدیو</string>
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+    <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+  </style>
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+    <item name="android:background">@android:color/transparent</item>
+  </style>
+    <style name="DialogTheme.Dark" parent="Theme.AppCompat.Dialog.MinWidth">
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+    <style name="app_button" parent="text_head5">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textAllCaps">false</item>
+  </style>
+    <style name="subtitle" parent="text_head6"/>
+    <style name="text_head1" parent="text_parent">
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">@dimen/text_xxxl</item>
+  </style>
+    <style name="text_head2" parent="text_parent">
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">@dimen/text_xxl</item>
+  </style>
+    <style name="text_head3" parent="text_parent">
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">@dimen/text_xl</item>
+  </style>
+    <style name="text_head4" parent="text_parent">
+    <item name="android:textSize">@dimen/text_l</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+    <style name="text_head5" parent="text_parent">
+    <item name="android:textSize">@dimen/text_m</item>
+  </style>
+    <style name="text_head6" parent="text_parent">
+    <item name="android:textSize">@dimen/text_s</item>
+  </style>
+    <style name="text_parent">
+    <item name="fontFamily">@font/iran_sans</item>
+  </style>
+    <declare-styleable name="dt">
+    <attr format="color" name="default_background_color"/>
+    <attr format="color" name="default_outlin_background_color"/>
+    <attr format="color" name="default_text_color"/>
+    <attr format="color" name="default_subtitle_color"/>
+  </declare-styleable>
+</resources>

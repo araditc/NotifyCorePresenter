@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:background="@drawable/item_text_background"
+  android:orientation="vertical"
+  android:padding="@dimen/view_m">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      style="@style/text_head4"
+      android:text="@string/transaction_title" />
+  </LinearLayout>
+
+  <Space
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/view_s" />
+
+  <com.google.android.material.divider.MaterialDivider
+    android:layout_width="match_parent"
+    android:layout_height="1dp" />
+
+  <Space
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/view_s" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center|start">
+
+    <LinearLayout
+      android:id="@+id/llayTransType"
+      android:layout_width="@dimen/view_m"
+      android:layout_height="match_parent"
+      android:background="@drawable/transaction_payment_background"
+      android:orientation="horizontal" />
+
+    <Space
+      android:layout_width="@dimen/view_m"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      android:id="@+id/txtTransaction"
+      style="@style/text_head5"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/hello_world" />
+
+  </LinearLayout>
+
+</LinearLayout>

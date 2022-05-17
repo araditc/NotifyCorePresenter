@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.arad_itc.notify.core" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="31"
+        tools:overrideLibrary="androidx.security" />
+    <!-- Permissions the Application Requires -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true" >
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="Arad" />
+
+        <receiver
+            android:name="com.arad_itc.notify.core.notification.domain.receivers.AradFcmEventListener"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.arad_itc.notify.core.registrationComplete" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.arad_itc.notify.core.messageReceived" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.arad_itc.notify.core.notification.domain.services.AradFcmService"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="false"
+            tools:targetApi="n" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.arad_itc.notify.core.amq.domain.services.MqttService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

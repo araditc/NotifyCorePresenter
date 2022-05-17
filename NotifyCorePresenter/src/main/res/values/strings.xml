@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="default_notification_channel_id">Notify Core</string>
+
+  <string name="action_add_connection">Add Connection</string>
+
+
+  <string name="add_connection_general_label">General</string>
+  <string name="add_connection_client_id_label">Client ID</string>
+  <string name="add_connection_client_id_default">AndroidClient</string>
+  <string name="add_connection_server_label">Server</string>
+  <string name="add_connection_server_default">iot.eclipse.org</string>
+  <string name="add_connection_port_label">Port</string>
+  <string name="add_connection_clean_session_label">Clean Session</string>
+  <string name="add_connection_advanced_label">Advanced</string>
+  <string name="add_connection_username_label">Username</string>
+  <string name="add_connection_password_label">Password</string>
+  <string name="add_connection_timeout_label">Timeout</string>
+  <string name="add_connection_keepalive_label">Keepalive</string>
+  <string name="add_connection_tls_server_key_label">Server TLS Key</string>
+  <string name="add_connection_tls_client_key_label">Client TLS Key</string>
+  <string name="add_connection_lwt_label">Last Will &amp; Testament</string>
+  <string name="add_connection_lwt_topic_label">Topic</string>
+  <string name="add_connection_lwt_message_label">Message</string>
+  <string name="add_connection_lwt_retain_label">Retain</string>
+  <string name="add_connection_lwt_qos_label">QoS</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="connection_connected_to">Connected to</string>
+
+  <string name="connection_disconnected_from">Disconnected from</string>
+  <string name="connection_unknown_status">Unknown connection status to</string>
+  <string name="connection_connecting_to">Connecting to</string>
+  <string name="connection_disconnecting_from">Disconnecting from</string>
+  <string name="connection_error_connecting_to">An error occurred connecting to</string>
+  <string name="connection_clear">Clear</string>
+  <string name="subscription_new">New Subscription</string>
+  <string name="manage_title">Manage Connection</string>
+
+
+  <string name="manage_delete">Delete Connection</string>
+  <string name="manage_edit">Edit Connection</string>
+  <string name="notifyTitle">MQTT Message Received</string>
+
+  <string name="notifyTitle_connectionLost">MQTT Client Has Lost Connection</string>
+  <string name="messageRecieved">Received message %1$s &lt;br/&gt; &lt;small&gt;Topic: %2$s &lt;/small&gt; </string>
+
+  <!-- Strings that need formatting  -->
+  <string name="timestamp">&lt;br/&gt; &lt;small&gt; %1$s &lt;/small&gt;</string>
+  <string name="notification">%1$s has received %2$s on topic %3$s</string>
+  <string name="toast_pub_success">Published message: %1$s to topic: %2$s</string>
+  <string name="toast_sub_success">Subscribed to %1$s</string>
+  <string name="toast_disconnected">Disconnected</string>
+  <string name="toast_pub_failed">Failed to publish message: %1$s to topic: %2$s</string>
+  <string name="toast_sub_failed">Failed to subscribe to %1$s</string>
+  <string name="connection_lost">%1$s has lost connection to %2$s</string>
+  <string name="topic_label">Topic</string>
+
+  <!-- Strings for Subscriptions Fragment -->
+  <string name="qos_label">QoS</string>
+  <string name="notify_label">Show Notifications</string>
+  <string name="subscribe_ok">OK</string>
+  <string name="subscribe_cancel">Cancel</string>
+  <string name="qos_text">QoS: %1$d</string>
+  <string name="notify_text">Notifications: %1$s</string>
+  <string name="help_and_feedback">Help &amp; Feedback</string>
+
+
+  <!-- Strings for Help Fragment -->
+  <string name="help_arad">arad</string>
+  <string name="help_title"> arad Android Example Utility</string>
+  <string name="help_email_button">Get Help or send Feedback</string>
+  <string name="help_arad_website">Go to the arad Website</string>
+  <string name="help_enable_logging">Enable arad Logging</string>
+  <string name="home_no_connections">No Connections</string>
+
+
+  <!-- Home Fragment -->
+  <string name="home_no_cons_message">It looks like there are no connections defined yet.</string>
+  <string name="message_time">Time:</string>
+
+
+  <!-- messages -->
+  <string name="message_time_fmt">Time: %1$s</string>
+  <string name="publish">Publish</string>
+  <string name="topic_fmt">Topic: %1$s</string>
+  <string name="enabled">Enabled</string>
+
+
+  <string name="disabled">Disabled</string>
+  <string name="placeholder_main_label">Main Label</string>
+
+
+  <!-- placeholders -->
+  <string name="placeholder_sub_label">Sub Label</string>
+  <string name="placeholder_example">Example application</string>
+  <string name="message_topic">Topic: </string>
+
+  <string name="transaction_title">تراکنش</string>
+  <string name="image_title">تصاویر</string>
+  <string name="audios_title">صدا</string>
+  <string name="file_title">فایل</string>
+  <string name="location_title">موقعیت مکانی</string>
+  <string name="text_title">پیام</string>
+  <string name="video_title">ویدیو</string>
+  <string name="download">دانلود</string>
+  <string name="CancelDownload">لغو دانلود</string>
+  <string name="DownloadFile">دانلود فایل</string>
+  <string name="call">تماس</string>
+  <string name="save">ذخیره</string>
+
+  <string name="Audio">صدا</string>
+  <string name="Contact">مخاطبین</string>
+  <string name="Document">فایل</string>
+  <string name="Location">موقعیت</string>
+  <string name="Text">متن</string>
+  <string name="Video">ویدیو</string>
+  <string name="Image">تصویر</string>
+  <string name="Custom">متفرقه</string>
+  <string name="SEEN">دیده شده</string>
+  <string name="DLR">تحویل داده شده</string>
+  <string name="Command">دستور</string>
+  <string name="Transaction">تراکنش</string>
+  <string name="dialog_delete_title">حذف پیام</string>
+  <string name="dialog_delete_message">آیا از حذف این پیام اطمینان دارید؟</string>
+  <string name="dialog_delete_pos_btn">بله,حذف</string>
+  <string name="dialog_delete_neg_btn">لغو</string>
+  <string name="searchBtnSheetTitle">جستجو</string>
+  <string name="selectDate">انتخاب تاریخ</string>
+
+
+  <!-- Message List Item -->
+  <string-array name="qos_options">
+    <item name="qos_0">0</item>
+    <item name="qos_1">1</item>
+    <item name="qos_2">2</item>
+  </string-array>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "435536876252",
+    "project_id": "presenter-4f351",
+    "storage_bucket": "presenter-4f351.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435536876252:android:2a250973d6e895d8509a19",
+        "android_client_info": {
+          "package_name": "com.arad_itc.notify.core.app.presenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435536876252-qh3v4fsumndvosl0vtgf9gcp24omgobk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8p9Nt7BelhnCwkEoOgXXp7GWKK5bfo0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435536876252-qh3v4fsumndvosl0vtgf9gcp24omgobk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
