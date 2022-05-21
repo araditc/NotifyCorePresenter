@@ -37,12 +37,17 @@ dependencies {
     api fileTree(dir: 'libs', include: ['*.aar'])
     implementation 'com.android.support:multidex:1.0.3'
 
+//    implementation(group: 'com.arad_itc.notify.core', name: 'NotifyCore', version: '1.0.5', ext: 'aar') {
+//        implementation platform('com.google.firebase:firebase-bom:29.0.4')
+//        implementation 'com.google.firebase:firebase-messaging'
+//        implementation 'androidx.security:security-crypto:1.0.0'
+//    }
+
     implementation files("libs/NotifyCore.aar"){
     implementation platform('com.google.firebase:firebase-bom:29.0.4')
     implementation 'com.google.firebase:firebase-messaging'
     implementation 'androidx.security:security-crypto:1.0.0'
     }
-
 
     implementation files('libs/poi-3.7.jar')
     implementation 'androidx.appcompat:appcompat:1.4.1'
