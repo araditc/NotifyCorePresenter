@@ -1,12 +1,16 @@
 package com.arad_itc.notify.core.app.presenter;
 
 import android.app.Application;
+import android.content.IntentFilter;
 import android.util.Log;
 
 import com.arad_itc.notify.core.amq.domain.entities.AMQMessage;
 import com.arad_itc.notify.core.amq.domain.entities.ConnectionStatus;
 import com.arad_itc.notify.core.amq.domain.repositories.OnAradBrokerListener;
 import com.arad_itc.notify.core.amq.presentation.AradBroker;
+import com.arad_itc.notify.core.app.presenter.amq.data.datastores.ObjectBox;
+import com.arad_itc.notify.core.app.presenter.amq.domain.entities.AMQMessagePayload;
+import com.arad_itc.notify.core.app.presenter.amq.domain.receivers.AmqMessageService;
 import com.arad_itc.notify.core.app.presenter.amq.presentation.manager.RXBus;
 import com.arad_itc.notify.core.app.presenter.amq.presentation.manager.RxBusMessageEvent;
 import com.arad_itc.notify.core.notification.AradPushNotificationManager;
@@ -16,6 +20,7 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import androidx.annotation.NonNull;
+import io.objectbox.Box;
 
 public class App extends Application {
 
@@ -26,7 +31,12 @@ public class App extends Application {
     super.onCreate();
 
     FirebaseApp.initializeApp(this);
+
+    AmqMessageService amqMessageService = new AmqMessageService();
+    this.registerReceiver(amqMessageService, new IntentFilter("com.arad_itc.notify.amq.messageReceived"));
+
     createConnection();
+
   }
 
   void createConnection() {

@@ -12,13 +12,13 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven { url "https://jitpack.io" }
-        maven {
-            url "https://politecoder.jfrog.io/artifactory/politecoder-libs-gradle-dev-local"
-            credentials {
-                username = "politecoder97"
-                password = "24776353Ma*"
-            }
-        }
+//        maven {
+//            url "https://politecoder.jfrog.io/artifactory/politecoder-libs-gradle-dev-local"
+//            credentials {
+//                username = "politecoder97"
+//                password = "24776353Ma*"
+//            }
+//        }
     }
 }
 rootProject.name = "NotifyCorePresenter"

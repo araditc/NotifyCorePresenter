@@ -286,6 +286,10 @@ public class AradMessageListUi extends FrameLayout {
     RXBus.listen(RxBusMessageEvent.OnMessageArrived.class).subscribe(msg -> {
       if (msg == null) return;
       AMQMessage message = ((RxBusMessageEvent.OnMessageArrived) msg).getMessage();
+
+      Box<AMQMessagePayload> messageBox = ObjectBox.get().boxFor(AMQMessagePayload.class);
+      messageBox.put(new AMQMessagePayload(message.messageContent));
+
       _messagesListAdapter.addMessage(message);
       messagesRclv.scrollToPosition(_messagesListAdapter.getItemCount() - 1);
     }, error -> {
